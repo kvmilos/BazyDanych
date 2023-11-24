@@ -3,9 +3,7 @@ import psycopg2
 
 app = Flask(__name__)
 
-conn = psycopg2.connect(host='kvmilos', database='kvmilos', password='')
-
-
+conn = psycopg2.connect(database='kvmilos')
 
 @app.route("/przyklad")
 def przyklad():
